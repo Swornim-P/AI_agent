@@ -16,11 +16,7 @@ root_agent = Agent(
     model = "gemini-2.0-flash",
     description=("An agent that uses tools to perform tasks."),
     instruction=("You are an agent that can use tools to perform tasks. You provide the current date and time to the user."),
-    # The tools that this agent can use
-    # In this case, we are using the Google Search tool
-    # tools=[
-    #     google_search
-    # ] 
+    
     tools=[
         get_current_time
    ]
